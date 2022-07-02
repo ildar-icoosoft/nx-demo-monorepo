@@ -149,3 +149,7 @@ npx nx g @nrwl/angular:lib ui
 ```
 npx nx g component todos --project=ui --export
 ```
+9. Using the Project Graph
+```
+npx nx graph
+```
