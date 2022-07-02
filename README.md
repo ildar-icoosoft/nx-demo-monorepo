@@ -137,3 +137,7 @@ npx nx serve api // to serve the application
 npx nx build api // to build the application
 npx nx test api // to test the application
 ```
+6. Create library
+```
+npx nx g @nrwl/workspace:lib data
+```
