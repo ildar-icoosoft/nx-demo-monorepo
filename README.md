@@ -115,4 +115,4 @@ npx nx serve todos - запуск приложения todos
 ```
 npx nx e2e todos-e2e --watch
 ```
-
+3. 
