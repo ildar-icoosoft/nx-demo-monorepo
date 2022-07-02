@@ -153,3 +153,13 @@ npx nx g component todos --project=ui --export
 ```
 npx nx graph
 ```
+10. Build todos app
+```
+npx nx build todos
+```
+11. Use the run-many command to rebuild the two applications
+```
+npx nx run-many --target=build --projects=todos,api
+```
+Add --parallel to any command, and Nx does most of the work in parallel.
+
