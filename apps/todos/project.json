@@ -1,4 +1,5 @@
 {
+  "root": "apps/todos",
   "projectType": "application",
   "sourceRoot": "apps/todos/src",
   "prefix": "nx-demo-monorepo",
