@@ -103,3 +103,16 @@ Nx Cloud pairs with Nx in order to enable you to build and test code more rapidl
 Teams using Nx gain the advantage of building full-stack applications with their preferred framework alongside Nx’s advanced code generation and project dependency graph, plus a unified experience for both frontend and backend developers.
 
 Visit [Nx Cloud](https://nx.app/) to learn more.
+
+
+## Cheatsheet
+
+1. start application (https://nx.dev/angular-tutorial/01-create-application)
+```
+npx nx serve todos - запуск приложения todos
+```
+2. start e2e tests (https://nx.dev/angular-tutorial/02-add-e2e-test)
+```
+npx nx e2e todos-e2e --watch
+```
+

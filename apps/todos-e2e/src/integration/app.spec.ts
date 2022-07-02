@@ -1,6 +1,6 @@
-import { getGreeting } from '../support/app.po';
+import { getAddTodoButton, getTodos, getGreeting } from '../support/app.po';
 
-describe('todos', () => {
+describe('TodoApps', () => {
   beforeEach(() => cy.visit('/'));
 
   it('should display welcome message', () => {
@@ -9,5 +9,11 @@ describe('todos', () => {
 
     // Function helper example, see `../support/app.po.ts` file
     getGreeting().contains('Welcome todos');
+  });
+
+  it('should display todos', () => {
+    getTodos().should((t) => expect(t.length).equal(2));
+    getAddTodoButton().click();
+    getTodos().should((t) => expect(t.length).equal(3));
   });
 });
