@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-demo-monorepo/data": ["libs/data/src/index.ts"]
+      "@nx-demo-monorepo/data": ["libs/data/src/index.ts"],
+      "@nx-demo-monorepo/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

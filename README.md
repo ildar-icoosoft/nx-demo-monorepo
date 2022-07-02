@@ -141,3 +141,11 @@ npx nx test api // to test the application
 ```
 npx nx g @nrwl/workspace:lib data
 ```
+7. Create UI library
+```
+npx nx g @nrwl/angular:lib ui
+```
+8. Add component to library
+```
+npx nx g component todos --project=ui --export
+```
