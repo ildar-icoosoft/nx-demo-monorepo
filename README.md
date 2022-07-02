@@ -115,4 +115,25 @@ npx nx serve todos - запуск приложения todos
 ```
 npx nx e2e todos-e2e --watch
 ```
-3. 
+3. nx plugins list
+```
+nx list
+```
+4. install plugin
+```
+npm install --save-dev @nrwl/nest
+```
+or
+```
+yarn add --dev @nrwl/nest
+```
+5. Create a NestJS application
+```
+npx nx g @nrwl/nest:app api --frontendProject=todos
+```
+commands:
+```
+npx nx serve api // to serve the application
+npx nx build api // to build the application
+npx nx test api // to test the application
+```
