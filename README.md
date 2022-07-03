@@ -107,19 +107,23 @@ Visit [Nx Cloud](https://nx.app/) to learn more.
 
 ## Cheatsheet
 
-1. start application (https://nx.dev/angular-tutorial/01-create-application)
+1. create project
+```
+npx create-nx-workspace@latest
+```
+2. start application (https://nx.dev/angular-tutorial/01-create-application)
 ```
 npx nx serve todos - запуск приложения todos
 ```
-2. start e2e tests (https://nx.dev/angular-tutorial/02-add-e2e-test)
+3. start e2e tests (https://nx.dev/angular-tutorial/02-add-e2e-test)
 ```
 npx nx e2e todos-e2e --watch
 ```
-3. nx plugins list
+4. nx plugins list
 ```
 nx list
 ```
-4. install plugin
+5. install plugin
 ```
 npm install --save-dev @nrwl/nest
 ```
@@ -127,7 +131,7 @@ or
 ```
 yarn add --dev @nrwl/nest
 ```
-5. Create a NestJS application
+6. Create a NestJS application
 ```
 npx nx g @nrwl/nest:app api --frontendProject=todos
 ```
@@ -137,48 +141,48 @@ npx nx serve api // to serve the application
 npx nx build api // to build the application
 npx nx test api // to test the application
 ```
-6. Create library
+7. Create library
 ```
 npx nx g @nrwl/workspace:lib data
 ```
-7. Create UI library
+8. Create UI library
 ```
 npx nx g @nrwl/angular:lib ui
 ```
-8. Add component to library
+9. Add component to library
 ```
 npx nx g component todos --project=ui --export
 ```
-9. Using the Project Graph
+10. Using the Project Graph
 ```
 npx nx graph
 ```
-10. Build todos app
+11. Build todos app
 ```
 npx nx build todos
 ```
-11. Use the run-many command to rebuild the two applications
+12. Use the run-many command to rebuild the two applications
 ```
 npx nx run-many --target=build --projects=todos,api
 ```
 Add --parallel to any command, and Nx does most of the work in parallel.
-12. Run the command to see affected apps
+13. Run the command to see affected apps
 ```
 npx nx affected:apps
 ```
-13. Run the command to see affected libraries
+14. Run the command to see affected libraries
 ```
 npx nx affected:libs
 ```
-14. Test affected projects
+15. Test affected projects
 ```
 npx nx affected:test
 ```
-15. Run the command to retest the failed projects
+16. Run the command to retest the failed projects
 ```
 npx nx affected:test -- --only-failed
 ```
-16. You can run any target against the affected projects in the graph like this:
+17. You can run any target against the affected projects in the graph like this:
 ```
 # The following are equivalent
 npx nx affected --target=build
