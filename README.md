@@ -162,4 +162,25 @@ npx nx build todos
 npx nx run-many --target=build --projects=todos,api
 ```
 Add --parallel to any command, and Nx does most of the work in parallel.
-
+12. Run the command to see affected apps
+```
+npx nx affected:apps
+```
+13. Run the command to see affected libraries
+```
+npx nx affected:libs
+```
+14. Test affected projects
+```
+npx nx affected:test
+```
+15. Run the command to retest the failed projects
+```
+npx nx affected:test -- --only-failed
+```
+16. You can run any target against the affected projects in the graph like this:
+```
+# The following are equivalent
+npx nx affected --target=build
+npx nx affected:build
+```
